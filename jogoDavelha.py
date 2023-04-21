@@ -226,9 +226,10 @@ while(ninguemVenceu()):
         ultimoQueJogou = proximoAJogar
         
         if(robo):
+            ultimoQueJogou = "o"
             RoboJoga()
-        else:
-            proximoAJogar = trocarJogador()
+
+        proximoAJogar = trocarJogador()
     else:
         print("Você digitou um indice inválido tente novamente")
 
